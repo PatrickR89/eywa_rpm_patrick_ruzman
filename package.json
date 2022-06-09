@@ -1,0 +1,25 @@
+{
+  "name": "eywa_rpm_patrick_ruzman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "eywa_rpm_patrick_ruzman"
+  },
+  "keywords": [
+    "eywa",
+    "neyho",
+    "test",
+    "linkedin",
+    "robot"
+  ],
+  "author": "Patrick Ruzman",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^4.2.0"
+  }
+}
