@@ -113,3 +113,151 @@ Current browser version is 102.0.5005.63 with binary path C:\Program Files (x86)
 [10-06-2022 15:40:03]info: linkedIn_worker SCRIPT START
 [10-06-2022 15:40:03]info: linkedIn_worker SCRIPT END 
 
+[10-06-2022 20:48:33]info: linkedIn_worker SCRIPT START
+[10-06-2022 20:48:33]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 20:48:41]info: Logged in to LinkedIn
+[10-06-2022 20:59:18]info: linkedIn_worker SCRIPT START
+[10-06-2022 20:59:18]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 20:59:31]info: Logged in to LinkedIn
+[10-06-2022 20:59:31]info: View profile entered
+[10-06-2022 21:06:08]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:06:08]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:06:10]error: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="session_key"]"}
+  (Session info: chrome=102.0.5005.63)
+[10-06-2022 21:06:10]error: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="session_password"]"}
+  (Session info: chrome=102.0.5005.63)
+[10-06-2022 21:06:10]error: no such element: Unable to locate element: {"method":"css selector","selector":".sign-in-form__submit-button"}
+  (Session info: chrome=102.0.5005.63)
+[10-06-2022 21:06:10]info: View profile entered
+[10-06-2022 21:12:58]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:12:58]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:13:07]info: Logged in to LinkedIn
+[10-06-2022 21:13:07]info: View profile entered
+[10-06-2022 21:14:56]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:14:56]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:15:13]info: Logged in to LinkedIn
+[10-06-2022 21:15:13]info: View profile entered
+[10-06-2022 21:17:40]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:17:40]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:17:59]info: Logged in to LinkedIn
+[10-06-2022 21:17:59]info: View profile entered
+[10-06-2022 21:17:59]error: unhandledRejection: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="ember754"]"}
+  (Session info: chrome=102.0.5005.63)
+NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="ember754"]"}
+  (Session info: chrome=102.0.5005.63)
+    at Object.throwDecodedError (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:549:13)
+    at Executor.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:475:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:735:17)
+    at async toWireValue (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:140:15)
+    at async H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:190:16
+    at async forEachKey (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:184:9)
+    at async convertKeys (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:189:3)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:733:22)
+[10-06-2022 21:27:02]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:27:02]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:27:17]info: Logged in to LinkedIn
+[10-06-2022 21:27:17]info: View profile entered
+[10-06-2022 21:27:17]error: unhandledRejection: no such element: Unable to locate element: {"method":"link text","selector":"https://www.linkedin.com/in/patrick-test-eywar-test-8b17a7241/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BixJiJtkyTQmbFxkM%2BuI70g%3D%3D"}
+  (Session info: chrome=102.0.5005.63)
+NoSuchElementError: no such element: Unable to locate element: {"method":"link text","selector":"https://www.linkedin.com/in/patrick-test-eywar-test-8b17a7241/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BixJiJtkyTQmbFxkM%2BuI70g%3D%3D"}
+  (Session info: chrome=102.0.5005.63)
+    at Object.throwDecodedError (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:549:13)
+    at Executor.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:475:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:735:17)
+    at async toWireValue (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:140:15)
+    at async H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:190:16
+    at async forEachKey (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:184:9)
+    at async convertKeys (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:189:3)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:733:22)
+[10-06-2022 21:35:17]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:35:17]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:35:32]info: Logged in to LinkedIn
+[10-06-2022 21:35:32]info: View profile entered
+[10-06-2022 21:35:32]error: unhandledRejection: no such element: Unable to locate element: {"method":"link text","selector":"https://www.linkedin.com/in/patrick-test-eywar-test-8b17a7241/"}
+  (Session info: chrome=102.0.5005.63)
+NoSuchElementError: no such element: Unable to locate element: {"method":"link text","selector":"https://www.linkedin.com/in/patrick-test-eywar-test-8b17a7241/"}
+  (Session info: chrome=102.0.5005.63)
+    at Object.throwDecodedError (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:549:13)
+    at Executor.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:475:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:735:17)
+    at async toWireValue (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:140:15)
+    at async H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:190:16
+    at async forEachKey (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:184:9)
+    at async convertKeys (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:189:3)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:733:22)
+[10-06-2022 21:36:09]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:36:09]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:36:28]info: Logged in to LinkedIn
+[10-06-2022 21:36:28]info: View profile entered
+[10-06-2022 21:36:28]error: unhandledRejection: no such element: Unable to locate element: {"method":"link text","selector":"in/patrick-test-eywar-test-8b17a7241/"}
+  (Session info: chrome=102.0.5005.63)
+NoSuchElementError: no such element: Unable to locate element: {"method":"link text","selector":"in/patrick-test-eywar-test-8b17a7241/"}
+  (Session info: chrome=102.0.5005.63)
+    at Object.throwDecodedError (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:549:13)
+    at Executor.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:475:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:735:17)
+    at async toWireValue (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:140:15)
+    at async H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:190:16
+    at async forEachKey (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:184:9)
+    at async convertKeys (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:189:3)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:733:22)
+[10-06-2022 21:43:53]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:43:53]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:44:12]info: Logged in to LinkedIn
+[10-06-2022 21:44:12]info: View profile entered
+[10-06-2022 21:44:13]error: unhandledRejection: element click intercepted: Element <button id="ember11" class="mr4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view">...</button> is not clickable at point (96, 24). Other element would receive the click: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">...</svg>
+  (Session info: chrome=102.0.5005.63)
+ElementClickInterceptedError: element click intercepted: Element <button id="ember11" class="mr4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view">...</button> is not clickable at point (96, 24). Other element would receive the click: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">...</svg>
+  (Session info: chrome=102.0.5005.63)
+    at Object.throwDecodedError (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:549:13)
+    at Executor.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:475:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:735:17)
+[10-06-2022 21:46:52]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:46:52]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:47:23]info: Logged in to LinkedIn
+[10-06-2022 21:47:23]error: until.findElement is not a function
+[10-06-2022 21:48:25]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:48:25]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:48:56]info: Logged in to LinkedIn
+[10-06-2022 21:48:56]info: View profile entered
+[10-06-2022 21:48:57]error: unhandledRejection: element click intercepted: Element <button id="ember11" class="mr4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view">...</button> is not clickable at point (96, 24). Other element would receive the click: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">...</svg>
+  (Session info: chrome=102.0.5005.63)
+ElementClickInterceptedError: element click intercepted: Element <button id="ember11" class="mr4 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary ember-view">...</button> is not clickable at point (96, 24). Other element would receive the click: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">...</svg>
+  (Session info: chrome=102.0.5005.63)
+    at Object.throwDecodedError (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:549:13)
+    at Executor.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:475:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:735:17)
+[10-06-2022 21:53:22]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:53:22]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:53:38]info: Logged in to LinkedIn
+[10-06-2022 21:53:38]info: View profile entered
+[10-06-2022 21:56:52]info: linkedIn_worker SCRIPT START
+[10-06-2022 21:56:52]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 21:57:10]info: Logged in to LinkedIn
+[10-06-2022 21:57:10]info: View profile entered

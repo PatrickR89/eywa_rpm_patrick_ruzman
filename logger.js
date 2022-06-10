@@ -14,7 +14,9 @@ const logger = winston.createLogger({
     ),
     transports: [
         new winston.transports.File({
-            filename: "application.log"
+            filename: "application.log",
+            handleExceptions: true,
+            handleRejections: true
         })
     ]
 });
