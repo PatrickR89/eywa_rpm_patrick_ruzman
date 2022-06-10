@@ -59,3 +59,39 @@
 [10-06-2022 08:19:31]info: linkedIn_worker SCRIPT END 
 
 [10-06-2022 08:19:35]info: Key is not defined
+[10-06-2022 14:43:22]info: linkedIn_worker SCRIPT START
+[10-06-2022 14:43:22]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 14:43:27]info: Key is not defined
+[10-06-2022 14:44:04]info: linkedIn_worker SCRIPT START
+[10-06-2022 14:44:04]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 14:44:08]info: Key is not defined
+[10-06-2022 14:47:11]info: linkedIn_worker SCRIPT START
+[10-06-2022 14:47:11]info: getTitile is not defined
+[10-06-2022 14:47:11]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 14:51:38]info: linkedIn_worker SCRIPT START
+[10-06-2022 14:51:38]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 14:56:08]info: linkedIn_worker SCRIPT START
+[10-06-2022 14:56:08]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 14:56:12]error: Unable to locate element: *[id="session-key"]
+[10-06-2022 14:56:45]info: linkedIn_worker SCRIPT START
+[10-06-2022 14:56:45]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 14:56:49]error: Unable to locate element: *[id="session-key"]
+[10-06-2022 14:57:55]info: linkedIn_worker SCRIPT START
+[10-06-2022 14:57:55]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 15:18:14]info: linkedIn_worker SCRIPT START
+[10-06-2022 15:18:14]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 15:18:18]error: By.class is not a function
+[10-06-2022 15:18:54]info: linkedIn_worker SCRIPT START
+[10-06-2022 15:18:54]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 15:20:40]info: linkedIn_worker SCRIPT START
+[10-06-2022 15:20:40]info: linkedIn_worker SCRIPT END 
+
