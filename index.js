@@ -13,29 +13,30 @@ logger.info("linkedIn_worker SCRIPT START");
 //     .usingServer("http://localhost:4444/wd/hub")
 //     .build();
 
-const firefox = require("selenium-webdriver/firefox");
+const chrome = require("selenium-webdriver/chrome");
 
-const options = new firefox.Options();
-const service = new firefox.ServiceBuilder().build();
-const driver = firefox.Driver.createSession(options, service);
+const options = new chrome.Options();
+const service = new chrome.ServiceBuilder().build();
+const driver = chrome.Driver.createSession(options, service);
 let loggingPreferences = new webdriver.logging.Preferences();
 loggingPreferences.setLevel(
     webdriver.logging.Type.BROWSER,
     webdriver.logging.Level.INFO
 );
-let capabilities = webdriver.Capabilities.firefox();
+let capabilities = webdriver.Capabilities.chrome();
 capabilities.setLoggingPrefs(loggingPreferences);
 
-//     try {
-//         await driver.get("https://www.linkedin.com");
-//         await driver
-//             .findElement(By.name("q"))
-//             .sendKeys("webdriver", Key.RETURN);
-//         await driver.wait(until.titleIs("webdriver - Google Search"), 1000);
+driver
+    .manage()
+    .logs()
+    .get(webdriver.logging.Type.BROWSER)
+    .then(function (entries) {
+        entries.forEach(function (entry) {
+            logger.info("[%s] %s", entry.level.name, entry.message);
+        });
+    });
+
 //         await driver.quit();
-//     } catch (err) {
-//         logger.info(err);
-//     }
 
 try {
     // driver.manage().window().maximize();
@@ -66,7 +67,6 @@ try {
             } catch (err) {
                 logger.error(err);
             }
-            // Write EYWA login code here
         })
         .then(() => {
             // Write code that opens module "Kontakti" here

@@ -95,3 +95,21 @@
 [10-06-2022 15:20:40]info: linkedIn_worker SCRIPT START
 [10-06-2022 15:20:40]info: linkedIn_worker SCRIPT END 
 
+[10-06-2022 15:31:12]info: linkedIn_worker SCRIPT START
+[10-06-2022 15:31:12]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 15:35:01]info: linkedIn_worker SCRIPT START
+[10-06-2022 15:35:01]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 15:35:03]error: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 102.0.5005.63 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[10-06-2022 15:35:03]error: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 102.0.5005.63 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[10-06-2022 15:35:03]error: session not created: This version of ChromeDriver only supports Chrome version 103
+Current browser version is 102.0.5005.63 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[10-06-2022 15:36:19]info: linkedIn_worker SCRIPT START
+[10-06-2022 15:36:19]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 15:40:03]info: linkedIn_worker SCRIPT START
+[10-06-2022 15:40:03]info: linkedIn_worker SCRIPT END 
+
