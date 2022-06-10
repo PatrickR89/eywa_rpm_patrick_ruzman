@@ -261,3 +261,16 @@ ElementClickInterceptedError: element click intercepted: Element <button id="emb
 
 [10-06-2022 21:57:10]info: Logged in to LinkedIn
 [10-06-2022 21:57:10]info: View profile entered
+[10-06-2022 22:01:23]info: linkedIn_worker SCRIPT START
+[10-06-2022 22:01:23]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 22:01:41]info: Logged in to LinkedIn
+[10-06-2022 22:01:41]info: View profile entered
+[10-06-2022 22:04:59]info: linkedIn_worker SCRIPT START
+[10-06-2022 22:04:59]info: linkedIn_worker SCRIPT END 
+
+[10-06-2022 22:05:16]info: Logged in to LinkedIn
+[10-06-2022 22:05:16]info: View profile entered
+[10-06-2022 22:06:02]info: linkedIn_worker SCRIPT START
+[10-06-2022 22:06:02]info: linkedIn_worker SCRIPT END 
+

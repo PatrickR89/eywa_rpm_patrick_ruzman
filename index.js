@@ -66,12 +66,10 @@ try {
         })
         .then(() => {
             try {
-                driver.findElement(By.id("ember25")).click();
+                // driver.findElement(By.id("ember25")).click();
+                // instead of dropdown menu, upper left image anchor used to enter own profile
                 var viewProfile = driver.wait(
-                    until.elementLocated(
-                        By.className("ember-view link-without-hover-state"),
-                        2000
-                    )
+                    until.elementLocated(By.className("ember-view block"), 2000)
                 );
                 //dropdown menu link id changes with every dropdown! -> not a reference
                 viewProfile.click();
