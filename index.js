@@ -68,7 +68,7 @@ try {
             try {
                 // driver.findElement(By.id("ember25")).click();
                 // instead of dropdown menu, upper left image anchor used to enter own profile
-                var viewProfile = driver.wait(
+                let viewProfile = driver.wait(
                     until.elementLocated(By.className("ember-view block"), 2000)
                 );
                 //dropdown menu link id changes with every dropdown! -> not a reference
@@ -77,13 +77,40 @@ try {
             } catch (error) {
                 logger.error(error);
             }
+
+            try {
+                let button = driver.wait(
+                    until.elementLocated(
+                        By.xpath(
+                            "/html/body/div[7]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/button"
+                        ),
+                        500
+                    )
+                );
+                button.click();
+            } catch (error) {
+                logger.error(error);
+            }
         })
         .then(() => {
+            try {
+                let addPosition = driver.wait(
+                    until.elementLocated(
+                        By.xpath(
+                            "/html/body/div[6]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/div/div/ul/li[1]/a"
+                        ),
+                        2000
+                    )
+                );
+
+                action().mouseMove(addPosition).pause().click();
+                logger.info("linkedIn_worker SCRIPT END \n");
+            } catch (error) {
+                logger.error(error);
+            }
             // Write next step code here etc.
         });
 } catch (err) {
     console.log(err);
     logger.info(err);
 }
-
-logger.info("linkedIn_worker SCRIPT END \n");
