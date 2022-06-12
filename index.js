@@ -64,7 +64,7 @@ try {
                 logger.error(err);
             }
         })
-        .then(() => {
+        .then(async () => {
             try {
                 // driver.findElement(By.id("ember25")).click();
                 // instead of dropdown menu, upper left image anchor used to enter own profile
@@ -79,7 +79,7 @@ try {
             }
 
             try {
-                let button = driver.wait(
+                let button = await driver.wait(
                     until.elementLocated(
                         By.xpath(
                             "/html/body/div[7]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/button"
@@ -88,26 +88,38 @@ try {
                     )
                 );
                 button.click();
+                await driver.sleep(2000);
+                let addPosition = await driver.wait(
+                    until.elementLocated(
+                        By.xpath('button[text() = "Add position"]'),
+                        2000
+                        // By.xpath(
+                        //     "/html/body/div[6]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/div/div/ul/li[1]/a"
+                        // ),
+                        // 2000
+                    )
+                );
+
+                addPosition.click();
+                logger.info("linkedIn_worker SCRIPT END \n");
             } catch (error) {
                 logger.error(error);
             }
         })
         .then(() => {
-            try {
-                let addPosition = driver.wait(
-                    until.elementLocated(
-                        By.xpath(
-                            "/html/body/div[6]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/div/div/ul/li[1]/a"
-                        ),
-                        2000
-                    )
-                );
-
-                action().mouseMove(addPosition).pause().click();
-                logger.info("linkedIn_worker SCRIPT END \n");
-            } catch (error) {
-                logger.error(error);
-            }
+            // try {
+            //     let addPosition = driver.wait(
+            //         until.elementLocated(
+            //             By.xpath(
+            //                 "/html/body/div[6]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/div/div/ul/li[1]/a"
+            //             ),
+            //             2000
+            //         )
+            //     );
+            //     logger.info("linkedIn_worker SCRIPT END \n");
+            // } catch (error) {
+            //     logger.error(error);
+            // }
             // Write next step code here etc.
         });
 } catch (err) {

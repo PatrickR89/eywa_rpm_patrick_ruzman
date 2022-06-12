@@ -699,3 +699,15 @@ ReferenceError: Actions is not defined
     at Function.Module._load (internal/modules/cjs/loader.js:769:14)
     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
     at internal/main/run_main_module.js:17:47
+[12-06-2022 22:01:37]info: linkedIn_worker SCRIPT START
+[12-06-2022 22:02:10]info: Logged in to LinkedIn
+[12-06-2022 22:02:10]info: View profile entered
+[12-06-2022 22:04:58]info: linkedIn_worker SCRIPT START
+[12-06-2022 22:05:10]info: Logged in to LinkedIn
+[12-06-2022 22:05:10]info: View profile entered
+[12-06-2022 22:07:09]info: linkedIn_worker SCRIPT START
+[12-06-2022 22:07:32]info: Logged in to LinkedIn
+[12-06-2022 22:07:32]info: View profile entered
+[12-06-2022 22:07:55]info: linkedIn_worker SCRIPT START
+[12-06-2022 22:08:05]info: Logged in to LinkedIn
+[12-06-2022 22:08:05]info: View profile entered
