@@ -12,58 +12,63 @@ const chrome = require("selenium-webdriver/chrome");
 
 //         await driver.quit();
 
-try {
-    const options = new chrome.Options();
-    const service = new chrome.ServiceBuilder().build();
-    const driver = chrome.Driver.createSession(options, service);
-    let loggingPreferences = new webdriver.logging.Preferences();
-    loggingPreferences.setLevel(
-        webdriver.logging.Type.BROWSER,
-        webdriver.logging.Level.INFO
-    );
-    let capabilities = webdriver.Capabilities.chrome();
-    capabilities.setLoggingPrefs(loggingPreferences);
+const options = new chrome.Options();
+const service = new chrome.ServiceBuilder().build();
+const driver = chrome.Driver.createSession(options, service);
+let loggingPreferences = new webdriver.logging.Preferences();
+loggingPreferences.setLevel(
+    webdriver.logging.Type.BROWSER,
+    webdriver.logging.Level.INFO
+);
+let capabilities = webdriver.Capabilities.chrome();
+capabilities.setLoggingPrefs(loggingPreferences);
 
-    driver
-        .manage()
-        .logs()
-        .get(webdriver.logging.Type.BROWSER)
-        .then(function (entries) {
-            entries.forEach(function (entry) {
-                logger.info("[%s] %s", entry.level.name, entry.message);
-            });
+driver
+    .manage()
+    .logs()
+    .get(webdriver.logging.Type.BROWSER)
+    .then(function (entries) {
+        entries.forEach(function (entry) {
+            logger.info("[%s] %s", entry.level.name, entry.message);
         });
-    // driver.manage().window().maximize();
-    driver.get("https://www.linkedin.com");
-    driver
+    });
+// driver.manage().window().maximize();
+driver.get("https://www.linkedin.com");
+
+const handleLogin = async () => {
+    {
+        try {
+            await driver
+                .findElement(By.id("session_key"))
+                .sendKeys(process.env.LINKEDIN_EMAIL);
+            logger.info("Login to LinkedIn");
+        } catch (err) {
+            logger.error(err);
+            logger.info("Exit script due to error");
+            driver.close();
+        }
+
+        try {
+            await driver
+                .findElement(By.id("session_password"))
+                .sendKeys(process.env.LINKEDIN_PASSWORD);
+            await driver
+                .findElement(By.className("sign-in-form__submit-button"))
+                .click();
+
+            logger.info("Logged in to LinkedIn");
+        } catch (err) {
+            logger.error(err);
+            logger.info("Exit script due to error");
+            driver.close();
+        }
+    }
+};
+
+const main = async () => {
+    await driver
         .sleep(300)
-        .then(async () => {
-            try {
-                await driver
-                    .findElement(By.id("session_key"))
-                    .sendKeys(process.env.LINKEDIN_EMAIL);
-            } catch (err) {
-                logger.error(err);
-            }
-
-            try {
-                await driver
-                    .findElement(By.id("session_password"))
-                    .sendKeys(process.env.LINKEDIN_PASSWORD);
-            } catch (err) {
-                logger.error(err);
-            }
-
-            try {
-                await driver
-                    .findElement(By.className("sign-in-form__submit-button"))
-                    .click();
-
-                logger.info("Logged in to LinkedIn");
-            } catch (err) {
-                logger.error(err);
-            }
-        })
+        .then(handleLogin())
         .then(async () => {
             try {
                 // driver.findElement(By.id("ember25")).click();
@@ -76,6 +81,8 @@ try {
                 logger.info("View profile entered");
             } catch (error) {
                 logger.error(error);
+                logger.info("Exit script due to error");
+                driver.close();
             }
 
             try {
@@ -91,8 +98,8 @@ try {
                 await driver.sleep(2000);
                 let addPosition = await driver.wait(
                     until.elementLocated(
-                        By.xpath('button[text() = "Add position"]'),
-                        2000
+                        By.xpath('span[text() = "Add position"]'),
+                        5000
                         // By.xpath(
                         //     "/html/body/div[6]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/div/div/ul/li[1]/a"
                         // ),
@@ -104,25 +111,10 @@ try {
                 logger.info("linkedIn_worker SCRIPT END \n");
             } catch (error) {
                 logger.error(error);
+                logger.info("Exit script due to error");
+                driver.close();
             }
-        })
-        .then(() => {
-            // try {
-            //     let addPosition = driver.wait(
-            //         until.elementLocated(
-            //             By.xpath(
-            //                 "/html/body/div[6]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/div/div/ul/li[1]/a"
-            //             ),
-            //             2000
-            //         )
-            //     );
-            //     logger.info("linkedIn_worker SCRIPT END \n");
-            // } catch (error) {
-            //     logger.error(error);
-            // }
-            // Write next step code here etc.
         });
-} catch (err) {
-    console.log(err);
-    logger.info(err);
-}
+};
+
+main();
