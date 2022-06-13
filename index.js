@@ -65,56 +65,123 @@ const handleLogin = async () => {
     }
 };
 
+const handleEnterProfile = async () => {
+    try {
+        let viewProfile = driver.wait(
+            until.elementLocated(
+                By.css("button.artdeco-dropdown__trigger--placement-bottom"),
+                2000
+            )
+        );
+        viewProfile.click();
+        await driver.sleep(500);
+        let enterProfile = driver.wait(
+            until.elementLocated(
+                By.xpath(
+                    "/html/body/div[7]/header/div/nav/ul/li[6]/div/div/div/header/a[2]"
+                ),
+                2000
+            )
+        );
+        enterProfile.click();
+        logger.info("View profile entered");
+    } catch (error) {
+        logger.error(error);
+        logger.info("Exit script due to error");
+        driver.close();
+    }
+};
+
+const openAddExpirience = async () => {
+    try {
+        let button = await driver.wait(
+            until.elementLocated(
+                By.xpath(
+                    "/html/body/div[7]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/button"
+                ),
+                500
+            )
+        );
+        button.click();
+        await driver.sleep(500);
+        let addPosition = await driver.wait(
+            until.elementLocated(
+                By.css("a.artdeco-dropdown__item--is-dropdown"),
+                2000
+            )
+        );
+        logger.info("Add position button found");
+        addPosition.click();
+        logger.info("linkedIn_worker SCRIPT END \n");
+    } catch (error) {
+        logger.error(error);
+        logger.info("Exit script due to error");
+        driver.close();
+    }
+};
+
 const main = async () => {
-    await driver
-        .sleep(300)
-        .then(handleLogin())
-        .then(async () => {
-            try {
-                // driver.findElement(By.id("ember25")).click();
-                // instead of dropdown menu, upper left image anchor used to enter own profile
-                let viewProfile = driver.wait(
-                    until.elementLocated(By.className("ember-view block"), 2000)
-                );
-                //dropdown menu link id changes with every dropdown! -> not a reference
-                viewProfile.click();
-                logger.info("View profile entered");
-            } catch (error) {
-                logger.error(error);
-                logger.info("Exit script due to error");
-                driver.close();
-            }
+    await driver.sleep(300).then(handleLogin());
 
-            try {
-                let button = await driver.wait(
-                    until.elementLocated(
-                        By.xpath(
-                            "/html/body/div[7]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/button"
-                        ),
-                        500
-                    )
-                );
-                button.click();
-                await driver.sleep(2000);
-                let addPosition = await driver.wait(
-                    until.elementLocated(
-                        By.xpath('span[text() = "Add position"]'),
-                        5000
-                        // By.xpath(
-                        //     "/html/body/div[6]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/div/div/ul/li[1]/a"
-                        // ),
-                        // 2000
-                    )
-                );
+    await driver.sleep(200).then(handleEnterProfile());
 
-                addPosition.click();
-                logger.info("linkedIn_worker SCRIPT END \n");
-            } catch (error) {
-                logger.error(error);
-                logger.info("Exit script due to error");
-                driver.close();
-            }
-        });
+    await driver.sleep(200).then(openAddExpirience());
+    // .then(async () => {
+    //     try {
+    //         let viewProfile = driver.wait(
+    //             until.elementLocated(
+    //                 By.css(
+    //                     "button.artdeco-dropdown__trigger--placement-bottom"
+    //                 ),
+    //                 2000
+    //             )
+    //         );
+    //         viewProfile.click();
+    //         await driver.sleep(500);
+    //         let enterProfile = driver.wait(
+    //             until.elementLocated(
+    //                 By.xpath(
+    //                     "/html/body/div[7]/header/div/nav/ul/li[6]/div/div/div/header/a[2]"
+    //                 ),
+    //                 2000
+    //             )
+    //         );
+    //         enterProfile.click();
+    //         logger.info("View profile entered");
+    //     } catch (error) {
+    //         logger.error(error);
+    //         logger.info("Exit script due to error");
+    //         driver.close();
+    //     }
+
+    //     try {
+    //         let button = await driver.wait(
+    //             until.elementLocated(
+    //                 By.xpath(
+    //                     "/html/body/div[7]/div[3]/div/div/div[2]/div/div/main/section[6]/div[2]/div/div[2]/div[1]/div[1]/button"
+    //                 ),
+    //                 500
+    //             )
+    //         );
+    //         button.click();
+    //         await driver.sleep(500);
+    //         let addPosition = await driver.wait(
+    //             until.elementLocated(
+    //                 By.css("a.artdeco-dropdown__item--is-dropdown"),
+    //                 2000
+    //             )
+    //         );
+    //         logger.info("Add position button found");
+    //         addPosition.click();
+    //         logger.info("linkedIn_worker SCRIPT END \n");
+    //     } catch (error) {
+    //         logger.error(error);
+    //         logger.info("Exit script due to error");
+    //         driver.close();
+    //     }
+    // });
 };
 
 main();
+
+//

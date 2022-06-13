@@ -734,3 +734,150 @@ ReferenceError: Actions is not defined
 [13-06-2022 22:38:01]info: View profile entered
 [13-06-2022 22:38:03]info: Login to LinkedIn
 [13-06-2022 22:38:12]info: Logged in to LinkedIn
+[13-06-2022 22:42:30]info: linkedIn_worker SCRIPT START
+[13-06-2022 22:42:30]info: View profile entered
+[13-06-2022 22:42:33]info: Login to LinkedIn
+[13-06-2022 22:42:40]info: Logged in to LinkedIn
+[13-06-2022 22:44:54]info: linkedIn_worker SCRIPT START
+[13-06-2022 22:44:54]info: View profile entered
+[13-06-2022 22:44:55]error: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="session_key"]"}
+  (Session info: chrome=102.0.5005.63)
+[13-06-2022 22:44:55]info: Exit script due to error
+[13-06-2022 22:45:01]error: invalid session id
+[13-06-2022 22:45:01]info: Exit script due to error
+[13-06-2022 22:45:01]error: unhandledRejection: invalid session id
+NoSuchSessionError: invalid session id
+    at Object.throwDecodedError (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:549:13)
+    at Executor.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:475:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:735:17)
+    at async Driver.findElements (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:1061:17)
+[13-06-2022 22:45:01]error: invalid session id
+[13-06-2022 22:45:01]info: Exit script due to error
+[13-06-2022 22:45:03]info: linkedIn_worker SCRIPT START
+[13-06-2022 22:45:03]info: View profile entered
+[13-06-2022 22:45:06]info: Login to LinkedIn
+[13-06-2022 22:45:11]info: Logged in to LinkedIn
+[13-06-2022 22:51:58]error: chrome not reachable
+  (Session info: chrome=102.0.5005.63)
+[13-06-2022 22:51:58]info: Exit script due to error
+[13-06-2022 22:51:58]error: unhandledRejection: chrome not reachable
+  (Session info: chrome=102.0.5005.63)
+WebDriverError: chrome not reachable
+  (Session info: chrome=102.0.5005.63)
+    at Object.throwDecodedError (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:549:13)
+    at Executor.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:475:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:735:17)
+[13-06-2022 22:55:06]info: linkedIn_worker SCRIPT START
+[13-06-2022 22:55:06]info: View profile entered
+[13-06-2022 22:55:09]info: Login to LinkedIn
+[13-06-2022 22:55:14]info: Logged in to LinkedIn
+[13-06-2022 22:57:05]info: linkedIn_worker SCRIPT START
+[13-06-2022 22:57:06]info: View profile entered
+[13-06-2022 22:57:07]error: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="session_key"]"}
+  (Session info: chrome=102.0.5005.63)
+[13-06-2022 22:57:07]info: Exit script due to error
+[13-06-2022 22:57:11]error: invalid session id
+[13-06-2022 22:57:11]info: Exit script due to error
+[13-06-2022 22:57:12]error: unhandledRejection: invalid session id
+NoSuchSessionError: invalid session id
+    at Object.throwDecodedError (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:549:13)
+    at Executor.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:475:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:735:17)
+    at async Driver.findElements (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:1061:17)
+[13-06-2022 22:57:12]error: invalid session id
+[13-06-2022 22:57:12]info: Exit script due to error
+[13-06-2022 22:57:14]info: linkedIn_worker SCRIPT START
+[13-06-2022 22:57:14]info: View profile entered
+[13-06-2022 22:57:16]info: Login to LinkedIn
+[13-06-2022 22:57:22]info: Logged in to LinkedIn
+[13-06-2022 22:58:37]info: linkedIn_worker SCRIPT START
+[13-06-2022 22:58:37]info: View profile entered
+[13-06-2022 22:58:39]info: Login to LinkedIn
+[13-06-2022 22:58:43]info: Logged in to LinkedIn
+[13-06-2022 22:58:45]error: driver.click is not a function
+[13-06-2022 22:58:45]info: Exit script due to error
+[13-06-2022 23:00:21]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:00:22]info: View profile entered
+[13-06-2022 23:00:23]info: Login to LinkedIn
+[13-06-2022 23:00:29]info: Logged in to LinkedIn
+[13-06-2022 23:01:48]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:01:49]info: View profile entered
+[13-06-2022 23:01:50]info: Login to LinkedIn
+[13-06-2022 23:01:55]info: Logged in to LinkedIn
+[13-06-2022 23:03:33]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:03:34]info: View profile entered
+[13-06-2022 23:03:36]info: Login to LinkedIn
+[13-06-2022 23:03:43]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:03:44]info: View profile entered
+[13-06-2022 23:03:46]info: Login to LinkedIn
+[13-06-2022 23:03:50]info: Logged in to LinkedIn
+[13-06-2022 23:06:15]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:06:15]info: View profile entered
+[13-06-2022 23:06:17]error: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="session_key"]"}
+  (Session info: chrome=102.0.5005.63)
+[13-06-2022 23:06:17]info: Exit script due to error
+[13-06-2022 23:06:21]error: invalid session id
+[13-06-2022 23:06:21]info: Exit script due to error
+[13-06-2022 23:06:21]error: unhandledRejection: invalid session id
+NoSuchSessionError: invalid session id
+    at Object.throwDecodedError (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:549:13)
+    at Executor.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\http.js:475:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Driver.execute (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:735:17)
+    at async Driver.findElements (H:\my_projects\neyho-test\eywa_rpm_patrick_ruzman\node_modules\selenium-webdriver\lib\webdriver.js:1061:17)
+[13-06-2022 23:06:21]error: invalid session id
+[13-06-2022 23:06:21]info: Exit script due to error
+[13-06-2022 23:06:24]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:06:24]info: View profile entered
+[13-06-2022 23:06:26]info: Login to LinkedIn
+[13-06-2022 23:06:34]info: Logged in to LinkedIn
+[13-06-2022 23:22:45]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:22:45]info: View profile entered
+[13-06-2022 23:22:47]info: Login to LinkedIn
+[13-06-2022 23:22:51]info: Logged in to LinkedIn
+[13-06-2022 23:22:53]error: By.CSS_SELECTOR is not a function
+[13-06-2022 23:22:53]info: Exit script due to error
+[13-06-2022 23:24:09]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:24:09]info: View profile entered
+[13-06-2022 23:24:11]info: Login to LinkedIn
+[13-06-2022 23:24:15]info: Logged in to LinkedIn
+[13-06-2022 23:24:17]info: Add position button found
+[13-06-2022 23:24:17]info: linkedIn_worker SCRIPT END 
+
+[13-06-2022 23:29:23]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:29:24]info: View profile entered
+[13-06-2022 23:29:26]info: Login to LinkedIn
+[13-06-2022 23:29:31]info: Logged in to LinkedIn
+[13-06-2022 23:33:29]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:33:29]info: View profile entered
+[13-06-2022 23:33:31]info: Login to LinkedIn
+[13-06-2022 23:33:35]info: Logged in to LinkedIn
+[13-06-2022 23:37:19]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:37:20]info: View profile entered
+[13-06-2022 23:37:22]info: Login to LinkedIn
+[13-06-2022 23:37:25]info: Logged in to LinkedIn
+[13-06-2022 23:43:48]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:43:48]info: View profile entered
+[13-06-2022 23:43:50]info: Login to LinkedIn
+[13-06-2022 23:43:54]info: Logged in to LinkedIn
+[13-06-2022 23:44:31]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:44:32]info: View profile entered
+[13-06-2022 23:44:33]info: Login to LinkedIn
+[13-06-2022 23:44:38]info: Logged in to LinkedIn
+[13-06-2022 23:44:40]info: Add position button found
+[13-06-2022 23:44:40]info: linkedIn_worker SCRIPT END 
+
+[13-06-2022 23:48:41]info: linkedIn_worker SCRIPT START
+[13-06-2022 23:48:41]info: View profile entered
+[13-06-2022 23:48:43]info: Login to LinkedIn
+[13-06-2022 23:48:47]info: Logged in to LinkedIn
+[13-06-2022 23:48:49]info: Add position button found
+[13-06-2022 23:48:49]info: linkedIn_worker SCRIPT END 
+
